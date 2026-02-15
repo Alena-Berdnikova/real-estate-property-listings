@@ -1,0 +1,65 @@
+.card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.address {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+  color: #1a1a1a;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+  color: #2563eb;
+}
+
+.details {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.detail {
+  font-size: 14px;
+  color: #666;
+}
+
+.detail strong {
+  color: #1a1a1a;
+  margin-right: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .card {
+    background: #1a1a1a;
+    border-color: #333;
+  }
+
+  .address {
+    color: #e0e0e0;
+  }
+
+  .price {
+    color: #60a5fa;
+  }
+
+  .detail {
+    color: #999;
+  }
+
+  .detail strong {
+    color: #e0e0e0;
+  }
+}
