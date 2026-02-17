@@ -101,6 +101,10 @@ src/
 ## Known Limitations
 
 - No property images available for full address search results
+- Images are not stored in S3/Firestore — only image URLs are saved in the database
+- Firebase is configured as a cache with 1-hour TTL for demo purposes; in production, consider aggregating data from multiple sources (Zillow, Realtor, MLS, etc.) into a dedicated database
+- Third-party APIs used in this demo are on free tiers and require subscriptions/paid accounts for production use
+- No unit or integration tests implemented
 
 ## Areas for Improvement
 
@@ -113,3 +117,4 @@ src/
 - [ ] Add "Similar Listings" feature on property cards
 - [ ] Add multiple data sources (currently only Realtor.com)
 - [ ] Improve styling and UI/UX
+- [ ] Move client-side API calls (e.g., autocomplete) to backend for security — avoid exposing API keys; leverage Next.js API routes and consider using a dedicated database for autocomplete
